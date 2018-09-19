@@ -48,15 +48,21 @@ footer {
 
   p {
     display: inline-block;
+    margin: 5px;
   }
 
   a {
     text-decoration: underline;
   }
 
-  .right {
+  .copyright
+  {
     float: right;
+    @media #{$medium-and-down} {
+      float: left;
+    }
   }
+
 }
 
 .img-container {
