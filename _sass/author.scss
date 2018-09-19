@@ -6,16 +6,25 @@
 
 .author-bio {
   max-height: 450px;
-}
+  .author-description-container
+  {
+    padding-top: 10px;
+  }
 
-.author-name
-{
-  font-size: 2.5em;
-}
+  .author-name
+  {
+    font-size: 2.5em;
+    @media #{$medium-and-down} {
+      padding-top: 10px;
+      font-size: 1.5em;
+    }
+  }
 
-.image-author
-{
-  @media #{$medium-and-down} {
-    max-width: 40%;
+  .image-author
+  {
+    @media #{$medium-and-down} {
+      max-width: 40%;
+    }
   }
 }
+
