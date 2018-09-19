@@ -9,8 +9,6 @@
       @extend .valign-wrapper;
       i {
         padding-right: 10px;
-        color: $meetup-red;
-
       }
     }
     .card-content {
@@ -45,5 +43,13 @@
     margin: 0;
     font-size: 2em;
     padding-bottom: 20px;
+
+    @media #{$medium-and-down} {
+      font-size: 1.3em;
+    }
+  }
+  .event-headline
+  {
+    color: $blue;
   }
 }
