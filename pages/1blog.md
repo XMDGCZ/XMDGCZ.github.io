@@ -2,7 +2,5 @@
 layout: list-posts
 title: Blog
 permalink: blog.html
+category_type: 'Blog'
 ---
-
-{% include list-categories.html lang=page.lang %}
-{% include list-posts.html lang=page.lang %}
