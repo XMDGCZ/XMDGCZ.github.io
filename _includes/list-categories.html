@@ -1,3 +1,7 @@
+{% comment %}
+This file shows all used categories by posts - category without post will not show
+One post could have multiple categories
+{% endcomment %}
 <ul class="list-horizontal">
     <li>
        <a href="/blog"
@@ -6,21 +10,25 @@
         {% endif %}
         > Vše </a>
     </li>
+{% assign used-categories = "" | split: ',' %}
 
-    {% for category in site.custom-categories %}
-        {% for post in site.posts %}
-            {% if post.categories contains category.name %}
-            <li>
-                <a href="{{ category.url}}"
-                   {% if category.name == page.name %}
-                        class="category-highlighted"
-                   {% endif %}
-                >
-                    {{ category.name }}
-                </a>
-            </li>
-            {% continue %}
-            {% endif %}
-        {% endfor %}
+{% for category in site.custom-categories %}
+    {% for post in site.posts %}
+        {% if post.categories contains category.name %}
+            {% unless used-categories contains category.name %}
+                {% assign used-categories = used-categories | push: category.name  %}
+                <li>
+                    <a href="{{ category.url}}"
+                       {% if category.name == page.name %}
+                            class="category-highlighted"
+                       {% endif %}
+                    >
+                        {{ category.name }}
+                    </a>
+                </li>
+            {% endunless %}
+        {% continue %}
+        {% endif %}
     {% endfor %}
+{% endfor %}
 </ul>
