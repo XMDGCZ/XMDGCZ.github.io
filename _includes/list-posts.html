@@ -1,7 +1,7 @@
 {% assign max_posts = include.max | posts_lang.size %}
 <ul class="post-list">
     {% for post in site.posts limit:max_posts %}
-        {% if post.categories contains page.name or page.title =="Blog" %}
+        {% if post.categories contains page.name or page.title =="Blog" or page.title="Kurzy" %}
             <li>
                 {% comment %}
                 Enhancement: add post image (usable for sharing on soc. sites)

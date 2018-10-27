@@ -60,6 +60,16 @@ t:
       november: "listopadu"
       december : "prosince"
 
+collections:
+  authors:
+    output: true
+    permalink: /:name
+  custom-categories:
+    output: true
+    permalink: /:name
+  custom-categories-courses:
+    output: true
+    permalink: /:name
 
 defaults:
   - scope:
@@ -84,11 +94,11 @@ defaults:
     values:
       layout: list-posts
       menuHighlight: "Blog" # which item should be highlighted in navigation bar
+  - scope:
+      path: ""
+      type: "custom-categories-courses"
+    values:
+      layout: list-posts
+      menuHighlight: "Kurzy" # which item should be highlighted in navigation bar
 
-collections:
-  authors:
-      output: true
-      permalink: /:name
-  custom-categories:
-        output: true
-        permalink: /:name
+
