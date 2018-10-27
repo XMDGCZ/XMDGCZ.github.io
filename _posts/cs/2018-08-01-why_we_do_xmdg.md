@@ -3,7 +3,6 @@ layout: post
 title: "Vítejte na našem novém blogu a oslavte s námi dva roky naší komunity!" 
 categories:
             - "Komunita"
-            - "Xamarin Forms Introduction"
 author: "Vojtěch Mádr"
 ---
 
