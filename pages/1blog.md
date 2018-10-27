@@ -1,6 +1,5 @@
 ---
-layout: list-posts
+layout: blog-list-posts
 title: Blog
 permalink: blog.html
-category_type: 'Blog'
 ---

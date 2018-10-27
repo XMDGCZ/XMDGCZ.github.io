@@ -5,26 +5,10 @@ One post could have multiple categories
 This file could be called with parameter type. This type determines which category list will be used for categories.
 {% endcomment %}
 
-
-{% assign type = '' %}
-
-{% if include.category_type %}
-    {% assign type = include.category_type %}
-{% else %}
-    {% assign type = 'Blog' %}
-{% endif %}
-
-{% assign category_list = site.custom-categories %}
-{% if type  == "Kurzy" %}
-    {% assign category_list = site.custom-categories-courses %}
-{% endif %}
-
-{{ category_list.menuHighlight }}
-
 <ul class="list-horizontal">
     <li>
-       <a href="/{{ type | downcase }}"
-          {% if page.title == type  %}
+       <a href="/{{ layout.category_type | downcase }}"
+          {% if page.title == layout.category_type  %}
                 class="category-highlighted"
         {% endif %}
         > Vše </a>
