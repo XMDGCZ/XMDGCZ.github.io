@@ -5,4 +5,10 @@ category_type: 'Kurzy'
 ---
 {% assign category_list = site.custom-categories-courses %}
 
-{% include list-categories-card.html lang=page.lang %}
+{% if page.title == "Kurzy" %}
+    {% include list-categories-card.html lang=page.lang %}
+{% else %}
+    {% include list-categories-ul.html lang=page.lang %}
+    {% include list-posts.html lang=page.lang %}
+{% endif %}
+

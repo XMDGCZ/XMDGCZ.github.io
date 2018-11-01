@@ -1,7 +1,9 @@
 ---
 layout: post
-title: "XamarinAdvancedSamplePost" 
+title: "XamarinIntroductionSamplePost" 
 categories:
             - "Xamarin Forms Introduction"
 author: "David Malý"
 ---
+
+XamarinIntroductionSamplePost content
