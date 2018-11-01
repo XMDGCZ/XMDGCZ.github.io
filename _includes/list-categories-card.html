@@ -18,7 +18,7 @@ This file could be called with parameter type. This type determines which catego
         {% if post.categories contains category.name %}
             {% unless used-categories contains category.name %}
                 <div class="row">
-                    <a class="event-link" id="event-link" src="{{ category.url}}">
+                    <a class="event-link" id="event-link" href="{{ category.url}}">
                         <div class="col s12">
                             <div class="card horizontal hoverable">
                                 <div class="card-image hide-on-small-and-down">
