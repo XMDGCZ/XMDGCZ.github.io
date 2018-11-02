@@ -16,10 +16,12 @@ layout: default
         </article>
     </div>
     <div class="section">
-        {% include author-bio.html %}
+        {% include author/show-author-bio.html %}
     </div>
-    {% if site.disqus.shortname %}
-    {% include disqus_comments.html %}
-    {% endif %}
+    {% comment %}
+        Maybe in future we will add discussion from Facebook
+        {% if site.disqus.shortname %}
+            {% include disqus_comments.html %}
+        {% endif %}
+    {% endcomment %}
 </div>
-<script>$('.carousel.carousel-slider').carousel({fullWidth: true});</script>
