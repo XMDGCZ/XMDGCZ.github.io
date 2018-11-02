@@ -1,5 +1,5 @@
 ---
-layout: courses-list-posts
+layout: courses-list
 title: Kurzy
 permalink: kurzy.html
 ---
