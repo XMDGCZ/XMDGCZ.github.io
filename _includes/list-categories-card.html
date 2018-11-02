@@ -6,10 +6,9 @@ This file could be called with parameter type. This type determines which catego
 {% endcomment %}
 
 <div class="container section">
-    <div class="container event-notification section" id="event-notification">
-        <div class="col s12 center ">
-            <h2 class="event-headline"> Naše kurzy</h2>
-        </div>
+    <div class="col s12 center ">
+        <h2 class="event-headline"> Naše kurzy</h2>
+    </div>
 
 {% assign used-categories = "" | split: ',' %}
 
@@ -44,9 +43,4 @@ This file could be called with parameter type. This type determines which catego
         {% endif %}
     {% endfor %}
 {% endfor %}
-</ul>
-
-
-
-    </div>
 </div>
