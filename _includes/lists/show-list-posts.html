@@ -1,7 +1,23 @@
 {% assign max_posts = include.max | posts_lang.size %}
+{% assign posts = empty %}
+
+{% comment %}
+    Get posts and sort them by included values
+    include.ordeBy = null or reverse
+{% endcomment %}
+
+{% if include.sort %}
+    {% if include.orderBy %}
+        {% assign posts = site.posts | sort:include.sort | include.orderBy %}
+    {% else %}
+        {% assign posts = site.posts | sort:include.sort %}
+    {% endif %}
+{% else %}
+    {% assign posts = site.posts %}
+{% endif %}
 
 <ul class="post-list">
-    {% for post in site.posts limit:max_posts %}
+    {% for post in posts limit:max_posts %}
         {% if post.categories contains page.name or page.title == layout.category_type %}
             {% for category in category_list %}
                 {% if post.categories contains category.name %}
