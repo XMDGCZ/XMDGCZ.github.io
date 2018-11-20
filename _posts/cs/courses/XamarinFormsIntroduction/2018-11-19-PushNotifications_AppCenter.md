@@ -9,20 +9,22 @@ Většina dnešních aplikací potřebuje přijímat vzdáleně odesílané noti
 <!--excerpt-->
 
 Následující článek se dělí na 2 části:
-- Přidání aplikace do AppCenter
+- [Přidání aplikace do AppCenter](#s1)
 - Inicializace AppCenter v aplikaci Xamarin a nastavení aplikace pro přijímání notifikací
 - Zaregistrování do Firebase
 - Nastavení aplikace, aby zpracovávala push notifikace
 
 > Při práci s AppCenter je nutno mít na paměti, že některé funkce jsou stále v přeběžném přístupu.
 
+{: #s1 }
 # AppCenter - vytvoření aplikace
 
 V první řadě je doporučené ve [webovém portálu AppCenter](https://appcenter.ms/apps) vytvořit projekt (aplikaci), protože se jedná o nejjednodušší způsob, jak si zobrazit aktuální tutoriál pro integraci AppCenter do již existující aplikace.
 
 ![AppCenterInit](/assets/posts/courses/2018-11-19-PushNotifications_AppCenter/AppCenterInit.gif)
 
-# Xamarin aplikace - nastavení aplikace
+
+#  Xamarin aplikace - nastavení aplikace
 Po přidání projektu do AppCenter se zobrazí tutoriál, který se skládá z:
 - Přidání Nuget balíčku, pro tuto ukázku využejeme nuget balíčku: `Microsoft.AppCenter.Push`, který použijeme pro PushNotifikace.
 - V aplikaci spustit komunikaci s AppCenter pomocí vygenerovaného klíče
