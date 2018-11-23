@@ -30,6 +30,7 @@ Kromě toho je konzultantem a školitelem, přednáší na vývojářských konf
 * Bank account: 2401457334/2010 (Fio banka)
 * IBAN: CZ9620100000002401457334
 * SWIFT: FIOBCZPPXXX
+* Fyzická osoba zapsaná v živnostenském rejstříku. 
 
 ### Fotky
 
