@@ -34,7 +34,7 @@
                                     {% include post-meta-info.html post_date=post.date post_url=post.url post_lang=post.lang %}
                                 </div>
 
-                                <p class="post-excerpt">{{ post.excerpt | default: post.tagline | markdownify | strip_html | truncatewords: 70 }}</p>
+                                <p class="post-excerpt">{{ post.excerpt | markdownify | strip_html | truncatewords: 70 }}</p>
                                 {% comment %}
                                 Enhancement: list tags in post header
                                 {%if post.tags.size > 0 %}

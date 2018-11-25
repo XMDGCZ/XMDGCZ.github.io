@@ -3,6 +3,7 @@ layout: post
 title: "Push notifikace pomocí AppCenter"
 categories:
             - "Xamarin Forms Úvod"
+sort_index: 10
 author: "David Malý"
 ---
 Většina dnešních aplikací potřebuje přijímat vzdáleně odesílané notifikace - push notifikace. V tomto článku je ukázáno, jak docílit propojení AppCenter Push nofikací s Xamarin.Forms aplikací.
