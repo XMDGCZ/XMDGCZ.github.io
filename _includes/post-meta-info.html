@@ -1,41 +1,46 @@
 {% include author/get-authorOrDefault.liquid author_name = post.author %}
-<div>
-  <span>
-    {% if author %}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><a href="{{ author.url }}" >{{ author.title }}</a></span> •
-    {% endif %}
-    <i class="far fa-calendar-alt"></i>
-    <time datetime="{{ include.post_date | date_to_xmlschema }}" itemprop="datePublished">
-      {{ include.post_date | date: " %-d. "}}
-      {% assign m = include.post_date | date: "%-m" %}
-      {% case m %}
-        {% when '1' %}{{ site.t[include.post_lang].months.january }}
-        {% when '2' %}{{ site.t[include.post_lang].months.february }}
-        {% when '3' %}{{ site.t[include.post_lang].months.march }}
-        {% when '4' %}{{ site.t[include.post_lang].months.april }}
-        {% when '5' %}{{ site.t[include.post_lang].months.may }}
-        {% when '6' %}{{ site.t[include.post_lang].months.june }}
-        {% when '7' %}{{ site.t[include.post_lang].months.july }}
-        {% when '8' %}{{ site.t[include.post_lang].months.august }}
-        {% when '9' %}{{ site.t[include.post_lang].months.september }}
-        {% when '10' %}{{ site.t[include.post_lang].months.october }}
-        {% when '11' %}{{ site.t[include.post_lang].months.november }}
-        {% when '12' %}{{ site.t[include.post_lang].months.december }}
-      {% endcase %}
-      {{ include.post_date | date: "%Y" }}
-    </time>
-  </span>
 
-  <span itemprop="readtime">
-    <i class="far fa-clock"></i>{% capture read_time %}{% include read-time.html %}{% endcapture %}{{ read_time | strip }}
-  </span>
+<span>
+  {% if author %}
+      • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><a href="{{ author.url }}" >{{ author.title }}</a></span> •
+  {% endif %}
+  <i class="far fa-calendar-alt"></i>
+  <time datetime="{{ include.post_date | date_to_xmlschema }}" itemprop="datePublished">
+    {{ include.post_date | date: " %-d. "}}
+    {% assign m = include.post_date | date: "%-m" %}
+    {% case m %}
+      {% when '1' %}{{ site.t[include.post_lang].months.january }}
+      {% when '2' %}{{ site.t[include.post_lang].months.february }}
+      {% when '3' %}{{ site.t[include.post_lang].months.march }}
+      {% when '4' %}{{ site.t[include.post_lang].months.april }}
+      {% when '5' %}{{ site.t[include.post_lang].months.may }}
+      {% when '6' %}{{ site.t[include.post_lang].months.june }}
+      {% when '7' %}{{ site.t[include.post_lang].months.july }}
+      {% when '8' %}{{ site.t[include.post_lang].months.august }}
+      {% when '9' %}{{ site.t[include.post_lang].months.september }}
+      {% when '10' %}{{ site.t[include.post_lang].months.october }}
+      {% when '11' %}{{ site.t[include.post_lang].months.november }}
+      {% when '12' %}{{ site.t[include.post_lang].months.december }}
+    {% endcase %}
+    {{ include.post_date | date: "%Y" }}
+  </time>
+</span>
 
-  {% comment %}
-  Enhancements:  Add facebook comments in future
-  <span style="padding-left: 5px; padding-right: 5px;"> • </span>
-  {% assign canonical_url = include.post_url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url %}
+<span itemprop="readtime">
+  <i class="far fa-clock"></i>{% capture read_time %}{% include read-time.html %}{% endcapture %}{{ read_time | strip }}
+</span>
+
+{% if post.post_icon and post.post_icon != "" %}
+<span itemprop="post_type">
+      <i class="{{post.post_icon}}"></i>
+    </span>
+{% endif %}
+
+{% comment %}
+Enhancements:  Add facebook comments in future
+<span style="padding-left: 5px; padding-right: 5px;"> • </span>
+{% assign canonical_url = include.post_url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url %}
 
 
-  <span><span class="fb-comments-count" data-href="{{ canonical_url }}">0</span> {{ site.t[include.post_lang].comments }}</span>
-  {% endcomment %}
-</div>
+<span><span class="fb-comments-count" data-href="{{ canonical_url }}">0</span> {{ site.t[include.post_lang].comments }}</span>
+{% endcomment %}
