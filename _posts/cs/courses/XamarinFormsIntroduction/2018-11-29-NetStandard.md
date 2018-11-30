@@ -10,7 +10,7 @@ author: "David Malý"
 Co je .NET Standard, PCL, nebo BCL a FCL? A proč by to .NET vývojáře mělo zajímat.
 <!--excerpt-->
 
-<iframe src="https://onedrive.live.com/embed?cid=700E9A68882DA0BB&amp;resid=700E9A68882DA0BB%212884&amp;authkey=AJKwdVggzjmnKl0&amp;em=2&amp;wdAr=1.7777777777777777" width="1186px" height="691px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe>
+<iframe src="https://onedrive.live.com/embed?cid=700E9A68882DA0BB&amp;resid=700E9A68882DA0BB%212884&amp;authkey=AJKwdVggzjmnKl0&amp;em=2&amp;wdAr=1.7777777777777777" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe>
 
 Obsah prezentačních slides:
 - [.NET Frameworky](#NETFrameworky)
@@ -77,6 +77,5 @@ V případě, že vývojář potřebuje něco, co cílová platorma nepodporuje 
 
 # Shared
 {: #Shared }
-
 
 
