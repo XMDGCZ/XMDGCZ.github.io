@@ -3,6 +3,7 @@ layout: post
 title: "Push notifikace pomocí AppCenter"
 categories:
             - "Xamarin Forms Úvod"
+            - "HowTo"
 sort_index: 10
 author: "David Malý"
 ---
@@ -18,14 +19,14 @@ Následující článek se dělí na několik částí:
 
 > Při práci s AppCenter je nutno mít na paměti, že některé funkce jsou stále v přeběžném přístupu.
 
-# AppCenter - vytvoření aplikace
+## AppCenter - vytvoření aplikace
 {: #AppCenter }
 V první řadě je doporučené ve [webovém portálu AppCenter](https://appcenter.ms/apps) vytvořit projekt (aplikaci), protože se jedná o nejjednodušší způsob, jak si zobrazit aktuální tutoriál pro integraci AppCenter do již existující aplikace.
 
 ![AppCenterInit](/assets/posts/courses/2018-11-19-PushNotifications_AppCenter/AppCenterInit.gif)
 
 
-#  Xamarin aplikace - nastavení aplikace
+## Xamarin aplikace - nastavení aplikace
 {: #NastaveniAplikace }
 Po přidání projektu do AppCenter se zobrazí tutoriál, který se skládá z dvou kroků:
 - Přidání Nuget balíčku, pro tuto ukázku využejeme nuget balíčku: `Microsoft.AppCenter.Push`, který použijeme pro PushNotifikace
@@ -60,7 +61,7 @@ Výsledná třída App.xaml.cs může vypadat takto:
      }
 ```
 
-# Zaregistrování do Firebase
+## Zaregistrování do Firebase
 {: #Firebase }
 Nejprve je potřeba vytvořit projekt ve [webovém portálu Firebase](https://console.firebase.google.com). 
 
@@ -99,7 +100,7 @@ Ve FireBase je ServerKey k nalezení v Project Settings -> Cloud Messaging. V Ap
 ![FirebaseAppInit](/assets/posts/courses/2018-11-19-PushNotifications_AppCenter/FirebaseInAppCenter.png)
 
 
-# Handler pro příchozí zprávy
+## Handler pro příchozí zprávy
 {: #Handler }
 Zachycení zprávy je v aplikaci vyřešené pomocí handleru Push.PushNotificationReceived.
 
@@ -141,7 +142,7 @@ public App()
 ```
 > V některých případech se stane, že zpráva dojde do zařízení, ale PushNotificationReceived se nezavolá. Pro tento případ je zde popsaný workaround, který tento problém řeší.
 
-# Wokraround: Zpráva není zpracována aplikací
+## Wokraround: Zpráva není zpracována aplikací
 {: #Workaround }
 Chyba je nejspíše na straně nuget balíčku AppCenter.Push. Naštěstí lze celou část kódu pro přijetí zprávy nativně reprodukovat.
 
@@ -150,7 +151,7 @@ K tomu je potřeba:
 - [Pomocí Xamarin.Forms MessagingCenter notifikovat o přijetí zprávy](#MessagingCenter)
 
 
-## Vytvoření Android Service
+### Vytvoření Android Service
 {: #AndroidService }
 V projektu pro Android vytvoříme třídu ForegroundFirebaseMessagingService, která dědí z FirebaseMessagingService, tedy využívá binding na nativní Firebase balíček (bez AppCenter).
 
@@ -173,7 +174,7 @@ public class ForegroundFirebaseMessagingService : FirebaseMessagingService
 }
 ```
 
-## MessagingCenter zasílající informaci z Android části projektu do Xamarin.Forms sdíleného kódu
+### MessagingCenter zasílající informaci z Android části projektu do Xamarin.Forms sdíleného kódu
 {: #MessagingCenter }
 Pro přijímání zpráv z MessagingCenter je nutné, aby ji měl kdo přijímat (zaregistrování k odběru). To můžeme provést v App.xaml.cs. 
 

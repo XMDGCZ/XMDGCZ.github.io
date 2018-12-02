@@ -3,6 +3,7 @@ layout: post
 title: ".NET Standard"
 categories:
             - "Xamarin Forms Úvod"
+            - ".NET"
 post_icon: "fas fa-play-circle"
 sort_index: 1
 author: "David Malý"
@@ -19,7 +20,7 @@ Obsah prezentačních slides:
 - [Obsah .NET Standard](#NetStandardObsah)
 - [Verze .NET Standard](#NetStandardVerze)
  
-# .NET Frameworky
+## .NET Frameworky
 {: #NETFrameworky }
 .NET framework byl v posledních letech roztříštěn, jako příklad si můžeme vzít Mono - Open source implementaci, která je určená pro multiplatformní vývoj. Forkem Mona vzniklo Unity, které se od původního .NET frameworku ještě vzdálilo. Nejnověším přírůstkem k těmto frameworkům je .NET Core. 
 
@@ -43,7 +44,7 @@ Xamarin
 - open source
 - vlastní runtime
 
-# BCL a FCL
+## BCL a FCL
 {: #BCLandPCL }
 Base class libraries jsou základem pro každý framework, obsahují např. definice pro datové typy a základní knihovny. Jsou popsané normami [ECMA](https://visualstudio.microsoft.com/license-terms/ecma-c-common-language-infrastructure-standards/), které popisují i Common Language Infrastructure (CLI).
 
@@ -53,7 +54,7 @@ Problémem pro programátora je nutnost znalosti BCL i v případě, kdy pracuje
 
 Base Class libraries je název pro základní set knihoven pro .NET Framework, Core library je název pro knihovny pro .NET Core a Mono Class Library pro Mono.
 
-# .Net Standard
+## .Net Standard
 {: #NetStandard }
 Sjednocuje definice pro BCL, vytváří abstraktní vrstvu, na kterou mohou vývojáři spoléhat, je tedy možné sdílet kód napříč platformami.
 
@@ -72,7 +73,7 @@ V případě, že vývojář potřebuje něco, co cílová platorma nepodporuje,
 - emulace API - Mono pomocí .ini souborů emuluje Windows registry
 
 
-# Obsah Net Standard
+## Obsah Net Standard
 {: #NetStandardObsah }
 .NET Standard základní set API (pro 1. verzi) vznikl analýzou společných API v .NET Framework a Mono. Na základě této analýzy se API rozdělily na 2 kategorie:
 1. Potřebné API - API sdílené v obou frameworcích a vhodné pro sdílené v rámci celého .NET ekosystému
@@ -84,7 +85,7 @@ Příkladem vyčlenění je část AppDomain, konkrétně Code Access Security, 
 
 Prvních několik verzí .NET Standard je základem pro .NET Core, proto byly verzovány společně.
 
-# Verze .NET Standard
+## Verze .NET Standard
 {: #NetStandardVerze }
 
 Verzování je aditivní (nová verze obsahuje předešlé verze) a imutabilní (neměnné). 
