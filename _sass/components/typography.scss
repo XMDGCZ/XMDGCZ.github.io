@@ -56,20 +56,20 @@ ul li, ol li {
 
 ol {
   counter-reset: awesome-counter;
-  margin: 15px 0;
+  margin: 30px;
   padding-left: 0;
 
   li {
     list-style-type: none;
-    padding-left: 45px;
+    padding-left: 25px;
     position: relative;
-    line-height: 2em;
+    line-height: 1em;
 
     &:before {
       content: counter(awesome-counter) ".";
       counter-increment: awesome-counter;
       color: $blue;
-      font-size: 1.8em;
+      font-size: 17px;
       position: absolute;
       left: 0;
     }
@@ -130,7 +130,13 @@ a {
       transform: translateX(-5px);
     }
   }
+
+  img {
+    display: block;
+    margin: auto;
+  }
 }
+
 
 .category-highlighted
 {

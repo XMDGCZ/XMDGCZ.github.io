@@ -6,14 +6,14 @@
   ul {
     padding-left: 2em;
     > li {
-
       list-style-type: disc;
     }
   }
-  a{
-    img{
-      display: block;
-      margin: auto;
+
+  .post-content
+  {
+    h1{
+      padding: 0;
     }
   }
 }
