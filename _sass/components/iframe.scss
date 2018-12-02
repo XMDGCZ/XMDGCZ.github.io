@@ -1,21 +1,14 @@
 iframe {
-  background-image: url("/assets/images/icons/Eclipse-loading.gif");
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url("/assets/images/icons/Eclipse-loading.gif") no-repeat center;
   display: block;
   margin: auto;
-  width: 610px;
-  height: 367px;
+  width: 962px;
+  height:  565px;
 
-  @media #{$medium-and-down} {
+  @media only screen and (max-width : #{1186px})
+{
     width: 120%;
     margin-left: -10%;
-    height: 56vw;
+    height: 55.5vw;
   }
-
-}
-
-#FishBowlPanel .FishBowlPanel
-{
-  background-color: white !important;
 }
