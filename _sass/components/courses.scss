@@ -1,0 +1,31 @@
+.courses
+{
+  @media #{$medium-and-down} {
+    width: 100%;
+  }
+  .courses-title h2{
+    @media #{$medium-and-down} {
+      font-size: 2em;
+    }
+  }
+
+  .category-card {
+    .card-content {
+      .post-excerpt {
+        font-size: 1em;
+        @media #{$medium-and-down} {
+          font-size: 0.9em;
+        }
+      }
+
+      .event-name {
+        margin-top: 10px;
+        margin-bottom: 15px;
+        @media #{$medium-and-down} {
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+}
+

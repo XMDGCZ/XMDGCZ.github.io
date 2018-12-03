@@ -5,9 +5,9 @@ One post could have multiple categories
 This file could be called with parameter type. This type determines which category collection will be used for categories.
 {% endcomment %}
 
-<div class="container section">
-    <div class="col s12 center ">
-        <h2 class="event-headline"> Naše kurzy</h2>
+<div class="section courses">
+    <div class="col s12 center courses-title ">
+        <h2>Naše kurzy</h2>
     </div>
 
 {% assign used-categories = "" | split: ',' %}
@@ -17,19 +17,17 @@ This file could be called with parameter type. This type determines which catego
         {% if post.categories contains category.name %}
             {% unless used-categories contains category.name %}
                 <div class="row">
-                    <a class="event-link" id="event-link" href="{{ category.url}}">
-                        <div class="col s12">
+                    <a class="event-link" href="{{ category.url}}">
+                        <div class="col s12 category-card">
                             <div class="card horizontal hoverable">
                                 <div class="card-image hide-on-small-and-down">
                                     <img src="assets/images/logos/gopas.png">
                                 </div>
                                 <div class="card-stacked">
                                     <div class="card-content left-align">
-                                        <div class="row ">
-                                            <h2 class="event-name" id="event-name">{{ category.name }}</h2>
-                                            <div class="col s12">
-                                                <p class="post-excerpt">{{ category.excerpt | default: post.tagline | markdownify | strip_html | truncatewords: 70 }}</p>
-                                            </div>
+                                        <div class="row col s12">
+                                            <h2 class="event-name">{{ category.name }}</h2>
+                                            <p class="post-excerpt">{{ category.excerpt | default: post.tagline | markdownify | strip_html | truncatewords: 70 }}</p>
                                         </div>
                                     </div>
                                 </div>
