@@ -1,22 +1,25 @@
 {% comment %}
 This file shows all used categories by posts - category without post will not show
 One post could have multiple categories
+
+This file could be called with parameter type. This type determines which category collection will be used for categories.
 {% endcomment %}
+
 <ul class="list-horizontal">
     <li>
-       <a href="/blog"
-          {% if page.title == "Blog" %}
+       <a href="/{{ layout.category_type | downcase }}"
+          {% if page.title == layout.category_type  %}
                 class="category-highlighted"
         {% endif %}
         > Vše </a>
     </li>
+
 {% assign used-categories = "" | split: ',' %}
 
-{% for category in site.custom-categories %}
+{% for category in category_list %}
     {% for post in site.posts %}
         {% if post.categories contains category.name %}
             {% unless used-categories contains category.name %}
-                {% assign used-categories = used-categories | push: category.name  %}
                 <li>
                     <a href="{{ category.url}}"
                        {% if category.name == page.name %}
@@ -26,6 +29,7 @@ One post could have multiple categories
                         {{ category.name }}
                     </a>
                 </li>
+            {% assign used-categories = used-categories | push: category.name  %}
             {% endunless %}
         {% continue %}
         {% endif %}

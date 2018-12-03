@@ -1,0 +1,55 @@
+{% assign max_posts = include.max | posts_lang.size %}
+{% assign posts = empty %}
+
+{% comment %}
+    Get posts and sort them by included values
+    include.ordeBy = null or reverse
+{% endcomment %}
+
+{% if include.sort %}
+    {% if include.orderBy %}
+        {% assign posts = site.posts | sort:include.sort | include.orderBy %}
+    {% else %}
+        {% assign posts = site.posts | sort:include.sort %}
+    {% endif %}
+{% else %}
+    {% assign posts = site.posts %}
+{% endif %}
+
+<ul class="post-list">
+    {% for post in posts limit:max_posts %}
+        {% if post.categories contains page.name or page.title == layout.category_type %}
+            {% for category in category_list %}
+                {% if post.categories contains category.name %}
+                        <li>
+                            {% comment %}
+                            Enhancement: add post image (usable for sharing on soc. sites)
+                            {% endcomment %}
+                            <a class="blog-post-link" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">
+                                <h2>
+                                    {{ post.title }}
+                                </h2>
+
+                                <div class="blog-post-meta-list">
+                                    {% include post-meta-info.html post_date=post.date post_url=post.url post_lang=post.lang %}
+                                </div>
+
+                                <p class="post-excerpt">{{ post.excerpt | markdownify | strip_html | truncatewords: 70 }}</p>
+                                {% comment %}
+                                Enhancement: list tags in post header
+                                {%if post.tags.size > 0 %}
+                                <div class="blog-post-meta-list post-tag-list">
+                                    {% for tag in post.tags %}
+                                    <code>{{ tag | escape }}</code>&nbsp;
+                                    {% endfor %}
+                                </div>
+                                {%endif %}
+
+                                {% endcomment %}
+                            </a>
+                        </li>
+                    {% endif %}
+            {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

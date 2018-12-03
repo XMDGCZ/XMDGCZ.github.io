@@ -1,0 +1,14 @@
+iframe {
+  background: url("/assets/images/icons/Eclipse-loading.gif") no-repeat center;
+  display: block;
+  margin: auto;
+  width: 962px;
+  height:  565px;
+
+  @media only screen and (max-width : #{1186px})
+{
+    width: 120%;
+    margin-left: -10%;
+    height: 55.5vw;
+  }
+}

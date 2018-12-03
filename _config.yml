@@ -1,5 +1,5 @@
 name: Xamarin Developers Group Czech Blog
-title: XMDG Czech
+title: XMDGCZ
 url: http:/xmdg.cz
 author: David Malý
 email: info@xmdg.cz
@@ -60,6 +60,16 @@ t:
       november: "listopadu"
       december : "prosince"
 
+collections:
+  authors:
+    output: true
+    permalink: /:name
+  custom-categories:
+    output: true
+    permalink: /:name
+  custom-categories-courses:
+    output: true
+    permalink: /:name
 
 defaults:
   - scope:
@@ -67,6 +77,16 @@ defaults:
     values:
       lang: "cs"
       menuHighlight: "Blog" # which item should be highlighted in navigation bar
+      excerpt_separator: <!--excerpt-->
+  - scope:
+      type: "posts"
+      path: "_posts/*/courses/*"
+    values:
+      lang: "cs"
+      menuHighlight: "Kurzy" # which item should be highlighted in navigation bar
+      excerpt_separator: <!--excerpt-->
+      post_icon: ""  # name of Icon to show in post meta info, default is null, otherwise FontAwesome icon class
+      sort_index: 9999 # sorting position for listing posts
   - scope:
       type: "pages"
     values:
@@ -82,13 +102,14 @@ defaults:
       path: ""
       type: "custom-categories"
     values:
-      layout: list-posts
+      layout: blog-list-posts
       menuHighlight: "Blog" # which item should be highlighted in navigation bar
+  - scope:
+      path: ""
+      type: "custom-categories-courses"
+    values:
+      layout: courses-list-posts
+      menuHighlight: "Kurzy" # which item should be highlighted in navigation bar
+      excerpt_separator: <!--excerpt-->
 
-collections:
-  authors:
-      output: true
-      permalink: /:name
-  custom-categories:
-        output: true
-        permalink: /:name
+

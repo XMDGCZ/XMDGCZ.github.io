@@ -1,0 +1,9 @@
+---
+layout: page
+title: Blog
+category_type: 'Blog'
+---
+{% assign category_list = site.custom-categories %}
+
+{% include lists/show-list-categories-ul.html lang=page.lang %}
+{% include lists/show-list-posts.html lang=page.lang %}

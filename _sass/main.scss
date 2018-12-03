@@ -1,27 +1,31 @@
 @charset "utf-8";
 
 // Materialize needs to be imported first
-@import "materialize_override";
+@import "components/materialize_override";
 @import "materialize/materialize";
 
 // Base styles
-@import "variable";
-@import "helper";
-@import "layout";
-@import "typography";
+@import "components/variable";
+@import "components/helper";
+@import "components/layout";
+@import "components/typography";
 
 // Page modules
-@import "header";
-@import "highlighter";
+@import "components/header";
+@import "components/highlighter";
 
 // Page specific styles
-@import "post";
-@import "blog";
-@import "home";
-@import "author";
-@import "event-notification";
-@import "schedule-topic";
+@import "components/post";
+@import "components/blog";
+@import "components/home";
+@import "components/author";
+@import "components/courses";
+@import "components/event-notification";
+@import "components/schedule-topic";
 
 // Playground
-@import "custom";
-@import "monkeyfest";
+@import "components/custom";
+@import "components/monkeyfest";
+
+// Extensions
+@import "components/iframe";
