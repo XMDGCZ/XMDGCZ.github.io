@@ -37,8 +37,8 @@ Pro nasazení aplikace do ostrého provozu Vám nezbyde nic jiného než aplikac
 
 ### Popis důležitých položek:
 
-* Alias: Zadání aliasu (pojmenování) pro "Klíč"
-* Password: Zadání klíče pro - "KeyStore" a " Klíč" + jeho potvrzení (Pokud toto generujete tento klíč pomocí Android Studia, můžete tyto hesla zadat zvlášť).
+* Alias: Zadání aliasu (pojmenování) pro privátní klíč
+* Password: Zadání hesla pro - "KeyStore" (Store password) a zároveň "Privátního Klíče (Key password)" + jeho potvrzení (Pokud toto generujete tento klíč pomocí Android Studia, můžete tyto hesla zadat zvlášť).
 * Validity (roky): Doba, po kterou bude klíč platit. Klíč musí být validní alespoň 25 let. Po jeho vypršení 
 * Další informace o uživateli : Tyto informace nejsou zobrazeny v aplikaci, ale budou přidány do certifikátu, který je součastí APK.
 
