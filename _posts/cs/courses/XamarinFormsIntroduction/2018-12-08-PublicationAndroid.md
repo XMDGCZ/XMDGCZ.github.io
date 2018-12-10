@@ -15,7 +15,8 @@ Následující článek se dělí na několik částí:
 - [Privátní/Veřejné klíče, Certifikát a Keystore](#KeyStore)
 - [Podepsání aplikace manuálně](#AppSigningManual)
 - [Podepsání aplikace ve Visual Studio 17](#AppSigningVS)
-- [Správa podepisujících klíčů](#KeyManage)
+- [Správa podepisujících klíčů](#KeyManager)
+- [Lokální export .apk](#LocalExport)
 
 ## Privátní/Veřejné klíče, Certifikát a Keystore
 {: #KeyStore }
@@ -81,7 +82,7 @@ Aplikaci je možné podepsat existujícím keystore přímo z IDE Visual Studio 
 
 
 ## Správa podepisujících klíčů
-{: #KeyManage }
+{: #KeyManager }
 
 V současné době máte dvě možnosti, jak uchovat Klíč pro podepsání aplikace. Tyto možnosti si popíšeme v následujících řádcích:
 
@@ -96,11 +97,28 @@ Pokud použijete na správu klíčů Google Play, budete muset mít k dispozici 
 ![GooglePlayKey](/assets/posts/courses/2018-12-08-PublicationAndroid/Screenshot-04.png)
 
 
-
 ### Použití vaší interní správy klíčů
 
 Pokud si myslíte, že jste schopný si svůj KeyStore (a v něm uchovaný App Signing Key) pohlídat, není potřeba ho přidávat do Google Play. Musíme mít ale na paměti, že v případě jeho ztráty (či ztráty jeho hesla) musíme aplikaci nasadit pod novou registrací na Google Play.
 
+## Lokální export .apk
+{: #LocalExport}
+
+Pokud je potřeba exportovat aplikaci pouze lokálně např. pro interní distribuci mezi testery, Tak je možné vytvořit achiv (.apk) přímo v IDE.
+
+Pro VisualStudio 17 stačí kliknout na Android projekt pravým tlačítkem a zvolit možnost Archivovat. Pro zajištění funkčnosti nesmí být povolen ``Fast Deployment``, který je zapnutý defaultně v Debug konfiguraci buildu. Nejjednoduší je přepnout Build konfiguraci na Release a poté toto sestavení archivovat.
+
+![GooglePlayKey](/assets/posts/courses/2018-12-08-PublicationAndroid/VS-AndroidArchive.png)
+
+Poté stačí kliknout na tlačítko Distribute, zadat keystore a vybrat místo pro uložení do Pc.
+
+> Před archivací je dobré nejdříve nové nastavení sestavení vyzkoušet (alespoň build).
+
+### Přidání další architektury CPU do Release
+ 
+Defaultně Release konfigurace podporuje pouze ARM architekturu CPU. Pokud je při spouštění na emulátoru (většinou x86) zobrazena chyba ``Xamarin package does not support for CPU Architecture ...", nebo ``Deployment failed. Architecture not supported.`` Tak stačí ve vlastnostech Android projektu -> Android Options -> Advanced, přidat další architekturu v rolovací liště Supported architectures.
+
+![GooglePlayKey](/assets/posts/courses/2018-12-08-PublicationAndroid/VSAddCPUArchitecture.png)
 
 ### Zdroje:
 
@@ -109,3 +127,5 @@ Pokud si myslíte, že jste schopný si svůj KeyStore (a v něm uchovaný App S
 [Manually Signing the APK](https://docs.microsoft.com/en-us/xamarin/android/deploy-test/signing/manually-signing-the-apk#Sign_the_APK_with_jarsigner)
 
 [Publishing Google Play](https://docs.microsoft.com/en-us/xamarin/android/deploy-test/publishing/publishing-to-google-play/?tabs=macos)
+
+[CPU Architectures](https://docs.microsoft.com/cs-cz/xamarin/android/app-fundamentals/cpu-architectures?tabs=windows)
