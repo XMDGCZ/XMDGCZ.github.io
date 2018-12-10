@@ -13,8 +13,9 @@ Aplikace je hotová a otestovaná, ale co musím udělat proto, aby se dostala k
 
 Následující článek se dělí na několik částí:
 - [Privátní/Veřejné klíče, Certifikát a Keystore](#KeyStore)
-- [Podepsání aplikace](#AppSigning)
-- [Zpráva podepisujících klíčů](#KeyManage)
+- [Podepsání aplikace manuálně](#AppSigningManual)
+- [Podepsání aplikace ve Visual Studio 17](#AppSigningVS)
+- [Správa podepisujících klíčů](#KeyManage)
 
 ## Privátní/Veřejné klíče, Certifikát a Keystore
 {: #KeyStore }
@@ -48,8 +49,8 @@ nebo [manuálně](https://docs.microsoft.com/en-us/xamarin/android/deploy-test/s
 
 Pokud se chcete podívat na údaje (nejčasteji Fingerprinty) v privátním klíči, zavítejte [zde](https://docs.microsoft.com/en-us/xamarin/android/deploy-test/signing/keystore-signature?tabs=macos)!
 
-## Podepsání aplikace
-{: #AppSigning }
+## Podepsání aplikace manuálně
+{: #AppSigningManual}
 
 Podepsání aplikace probíhá ve dvou krocích : Zipalignování APK a podepsání pomocí apksigner
 (apksigner je dostupný od Android SDK v24.0.3)
@@ -63,6 +64,7 @@ zipalign -f -v 4 mono.samples.helloworld-unsigned.apk helloworld.apk
 ```
 
 2.Sign the APK
+
 Aplikace poté snadno podepíšete pomocí appsigneru.
 ```
 apksigner sign --ks xample.keystore --ks-key-alias publishingdoc mono.samples.helloworld.apk
@@ -70,14 +72,22 @@ apksigner sign --ks xample.keystore --ks-key-alias publishingdoc mono.samples.he
 
 Tento proces za Vás udělá Xamarin Studio při buildu a také při nasazení aplikace.
 
-## Zpráva podepisujících klíčů
+## Podepsání aplikace ve Visual Studio 17
+{: #AppSigningVS}
+
+Aplikaci je možné podepsat existujícím keystore přímo z IDE Visual Studio 17. K této možnosti se lze dostat pomocí vlastností .Android projektu v záložce Android Package Signing.
+
+![VSKeyStore](/assets/posts/courses/2018-12-08-PublicationAndroid/VSKeyStore.png)
+
+
+## Správa podepisujících klíčů
 {: #KeyManage }
 
 V současné době máte dvě možnosti, jak uchovat Klíč pro podepsání aplikace. Tyto možnosti si popíšeme v následujících řádcích:
 
 ### Použití App Signing na Google Play (Doporučený způsob)
 
-Pokud použijete na zprávu klíčů Google Play, budete muset mít k dispozici dva klíče - zmiňovaný "App Signing Key" a tzv. "Upload Key".
+Pokud použijete na správu klíčů Google Play, budete muset mít k dispozici dva klíče - zmiňovaný "App Signing Key" a tzv. "Upload Key".
 
 1. App Signing klíč bude napevno uložen na Google Play a tudíž nemůže dojít k jeho ztrátě. 
 
@@ -87,7 +97,7 @@ Pokud použijete na zprávu klíčů Google Play, budete muset mít k dispozici 
 
 
 
-### Použití vaší interní zprávy klíčů
+### Použití vaší interní správy klíčů
 
 Pokud si myslíte, že jste schopný si svůj KeyStore (a v něm uchovaný App Signing Key) pohlídat, není potřeba ho přidávat do Google Play. Musíme mít ale na paměti, že v případě jeho ztráty (či ztráty jeho hesla) musíme aplikaci nasadit pod novou registrací na Google Play.
 
