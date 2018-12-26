@@ -1,5 +1,5 @@
 # [XMDG.cz](http://xmdg.cz) - Oficiální web Xamarin Developers Group Czech
-
+[![Build Status](https://dev.azure.com/xmdgcz/XMDG-web/_apis/build/status/XMDG-rg%20-%20CI?branchName=master)](https://dev.azure.com/xmdgcz/XMDG-web/_build/latest?definitionId=1?branchName=master)
 ## Kdo jsme?
 
 Jsme největší Česká Xamarin komunita. Pořádáme menší lokální konference, meetupy, workshopy a další akce. 
