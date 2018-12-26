@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Fullstack Meetup
-permalink: fullstack-meetup.html
+permalink: /fullstack-meetup/
 published: false
 ---
 
