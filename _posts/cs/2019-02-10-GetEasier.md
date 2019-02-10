@@ -53,10 +53,10 @@ Z toho všeho je patrné, že se to vše stíhat moc nedá a človek se snadno z
 8) Nepřehnat to s účením
 -   Člověk se musí v současné době stále vzdělávat. Nicméně nic se nemá přehánět. Pokud dělám každý den mobilní aplikace, pak zkoumat od rána do večera, jak funguje MSSQL server může být zajímavé, ale současné problémy mi to nevyřeší a nebudu ani dobrý mobilní ani backed vývojář.
 
-8) Snažit se nad věcma moc nepřemýšlet!
+9) Snažit se nad věcma moc nepřemýšlet!
 -   K tomu snad není co dodávat :)
 
-9) Týden má 5 pracovních dní
+10) Týden má 5 pracovních dní
 -   Jako Freelancer nežiji v tom, že týden má 40 pracovní hodin. Občas je potřeba zabrat i o víkendech. Ale rozhodně nebudu prodávat svůj víkendový čas jen tak. Z dlouhodobého hlediska je lepší odpočatý Vojtěch než vyřízený Vojtěch.
 
 Tyto body jsem sepsal s několika důvodů. První z nich, že když člověk má něco sepsané, snadněji se k tomu vrátí, pokud vypadne z tempa. Druhý je i pro mé potenciální klienty, pokud by se mnou chtěli spolupracovat, co ode mě mohou čekat a co já budu čekat od Vás.
