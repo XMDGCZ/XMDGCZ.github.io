@@ -50,7 +50,7 @@ Z toho všeho je patrné, že se to vše stíhat moc nedá a človek se snadno z
 7) Už ne 100% Remote Work
 -   Remote Work / Homeoffce je fajn a myslím, že je to velká výhoda, pokud člověk to zvládá. Ale po 2 letech, co jsem doma zjišťuji, že není špatné je alepsoň 1x za 14 dní vidět s lidmi s kterými něco řeším. Mít klid na práci je jedna věc, osobní kontakt druhá a obojí se může maximálně doplňovat.
 
-8) Nepřehnat to s účením
+8) Nepřehnat to s učením
 -   Člověk se musí v současné době stále vzdělávat. Nicméně nic se nemá přehánět. Pokud dělám každý den mobilní aplikace, pak zkoumat od rána do večera, jak funguje MSSQL server může být zajímavé, ale současné problémy mi to nevyřeší a nebudu ani dobrý mobilní ani backed vývojář.
 
 9) Snažit se nad věcma moc nepřemýšlet!
