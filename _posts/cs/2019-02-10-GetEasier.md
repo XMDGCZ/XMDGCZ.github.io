@@ -10,20 +10,20 @@ Je zimní nedělní odpoledne a se ženou se střídáme v hlídání dcery. Tak
 
 Pro zajímavost, v současné době dělám následující:
 
-- Dělám jednu nativní a dvě multiplaformní aplikace v Xamarinu pro stálejší 3 klienty
-- Připravuji program do nových epizod .NET.CZ Podcast
-- Domlouvám novou pražskou .NET konferenci
-- Občas si zapřednáším (třeba tento týden jsem byl na ShowIT a G2B Brno)
-- Pomáhám manželce o starost o dceru
-- Starost o [https://www.xmdg.cz](https://www.xmdg.cz)
-- Správá a vize našeho XMDG meetup.com
-- Obstarávám další potencální klienty
-- Mám obrovské TO-DO věcí k naučení
-- Řeším svojí renominaci na MS MVP
-- Občas něco pushnu na Github
-- Školím
-- Dávám zpětnou vazbu Xamarin a VS4Mac teamu
-- Řeším dostavbu domu
+- Dělám jednu nativní a dvě multiplaformní aplikace v Xamarinu pro stálejší 3 klienty,
+- Připravuji program do nových epizod .NET.CZ Podcast,
+- Domlouvám novou pražskou .NET konferenci,
+- Občas si zapřednáším (třeba tento týden jsem byl na ShowIT a G2B Brno),
+- Pomáhám manželce o starost o dceru,
+- Starost o [https://www.xmdg.cz](https://www.xmdg.cz),
+- Správá a vize našeho XMDG meetup.com,
+- Obstarávám další potencální klienty,
+- Mám obrovské TO-DO věcí k naučení,
+- Řeším svojí renominaci na MS MVP,
+- Občas něco pushnu na Github,
+- Školím,
+- Dávám zpětnou vazbu Xamarin a VS4Mac teamu,
+- Řeším přestavbu domu.
 
 a další zejména administrativní činnost :)
 
