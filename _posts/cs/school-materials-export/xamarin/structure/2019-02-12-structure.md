@@ -1,1 +1,0 @@
-Vojta: struktura projektu
