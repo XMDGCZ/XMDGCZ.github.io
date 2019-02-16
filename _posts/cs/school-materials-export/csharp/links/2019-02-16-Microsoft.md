@@ -1,0 +1,19 @@
+---
+layout: post
+title: "Microsoft "
+categories:
+    - "csharp"
+    - "links"
+sort_index: 3
+author: "David Malý"
+--- 
+
+
+##   Microsoft 
+
+[Český MSDN blog](http://blogs.msdn.com/b/vyvojari/)
+
+[VCS pro VS](http://stackoverflow.com/questions/13668868/sharing-visual-studio-projects-between-computers)
+
+[Microsoft kupuje Xamarin](https://blogs.msdn.microsoft.com/vyvojari/2016/03/01/microsoft-kupuje-xamarin/)
+

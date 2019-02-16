@@ -1,0 +1,211 @@
+version: 1
+categories:
+- title: Programovací jazyky
+- pages:
+  - title: Dělení programovacích jazyků
+    url: 2019/02/16/delba
+  - title: Programovací paradigma
+    url: 2019/02/16/paradigma
+  - title: Jazyky C
+    url: 2019/02/16/C
+  - title: Kompilace
+    url: 2019/02/16/kompilace
+- title: Úvod do C#
+- pages:
+  - title: Proměnné
+    url: 2019/02/16/promenne
+  - title: Datové typy
+    url: 2019/02/16/datoveTypy
+  - title: Rozhodování
+    url: 2019/02/16/rozhodovani
+  - title: Cykly
+    url: 2019/02/16/Cykly
+  - title: Základní příkazy
+    url: 2019/02/16/ZakladniPrikazy
+  - title: Regulární výrazy
+    url: 2019/02/16/regexp
+  - title: Visual Studio snippety
+    url: 2019/02/16/visualStudioSnippets
+- title: .NET
+- pages:
+  - title: Platforma .NET
+    url: 2019/02/16/Platforma dotNET
+  - title: .NET Core
+    url: 2019/02/16/netCore
+  - title: UWP
+    url: 2019/02/16/uwp
+- title: OOP
+- pages:
+  - title: Třídy
+    url: 2019/02/16/Tridy
+  - title: Reference objektu
+    url: 2019/02/16/reference
+  - title: Porovnávání objektů
+    url: 2019/02/16/compare
+  - title: Dependency injection obecně
+    url: 2019/02/16/di - base
+- title: Programovací modely
+- pages:
+  - title: Úvod do programovacích modelů
+    url: 2019/02/16/intro
+  - title: SOLID
+    url: 2019/02/16/solid
+  - title: MVC
+    url: 2019/02/16/MVC
+  - title: MVVM
+    url: 2019/02/16/MVVM
+  - title: Interface
+    url: 2019/02/16/interface
+  - title: Interface 2
+    url: 2019/02/16/interface_student
+  - title: Abstrakce systému
+    url: 2019/02/16/abstraction_student
+  - title: Abstract class
+    url: 2019/02/16/abstractClass
+- title: Návrhové vzory
+- pages:
+  - title: Adapter
+    url: 2019/02/16/adapter
+  - title: Adapter 2
+    url: 2019/02/16/adapter2
+  - title: Builder
+    url: 2019/02/16/Builder
+  - title: Bridge
+    url: 2019/02/16/bridge
+  - title: Command
+    url: 2019/02/16/command
+  - title: Decorator
+    url: 2019/02/16/decorator
+  - title: Facade
+    url: 2019/02/16/facade
+  - title: Factory
+    url: 2019/02/16/factory
+  - title: Flyweight
+    url: 2019/02/16/Flyweight
+  - title: Interpreter
+    url: 2019/02/16/interpreter
+  - title: Memento
+    url: 2019/02/16/memento
+  - title: Observer
+    url: 2019/02/16/observer
+  - title: State
+    url: 2019/02/16/state
+  - title: Strategy
+    url: 2019/02/16/strategy
+  - title: Task-based Asynchronous Pattern
+    url: 2019/02/16/tap
+  - title: Visitor
+    url: 2019/02/16/visitor
+- title: Pole
+- pages:
+  - title: Datové struktury
+    url: 2019/02/16/abstractArr
+  - title: Primitivní pole
+    url: 2019/02/16/primArr
+  - title: Vícerozměrná pole
+    url: 2019/02/16/multiArr
+  - title: Množina
+    url: 2019/02/16/mnozina
+  - title: Fronta
+    url: 2019/02/16/fronta
+  - title: Zásobník
+    url: 2019/02/16/zasobnik
+  - title: Hashovací tabulka
+    url: 2019/02/16/hash
+  - title: Strom
+    url: 2019/02/16/tree
+  - title: Binární strom
+    url: 2019/02/16/binTree
+  - title: Seznam
+    url: 2019/02/16/list
+- title: Grafika
+- pages:
+  - title: WinForms
+    url: 2019/02/16/WinForms
+  - title: WPF
+    url: 2019/02/16/WPF
+  - title: Eventy
+    url: 2019/02/16/Events
+  - title: Životní cyklus událostí
+    url: 2019/02/16/EventsLifeCycle
+  - title: Více formulářů
+    url: 2019/02/16/MoreForms
+  - title: Styly
+    url: 2019/02/16/Styles
+  - title: Data binding
+    url: 2019/02/16/DataBinding
+  - title: Data binding - ukázka
+    url: 2019/02/16/DataBindingExample
+  - title: GIF
+    url: 2019/02/16/gif
+  - title: 3D grafika
+    url: 2019/02/16/3D
+- title: Ukládání dat
+- pages:
+  - title: CSV
+    url: 2019/02/16/csv
+  - title: Databáze
+    url: 2019/02/16/db
+  - title: SQL
+    url: 2019/02/16/sql
+  - title: Joiny
+    url: 2019/02/16/join
+- title: Vlákna
+- pages:
+  - title: Vlákna
+    url: 2019/02/16/thread
+  - title: Task C#
+    url: 2019/02/16/task
+  - title: Task rozšířeně
+    url: 2019/02/16/taskExtended
+  - title: Synchronizace
+    url: 2019/02/16/sync
+  - title: ThreadPool
+    url: 2019/02/16/threadPool
+  - title: Async
+    url: 2019/02/16/threadAsync
+- title: Řadící algoritmy
+- pages:
+  - title: Úvod do řadících algoritmů
+    url: 2019/02/16/algs
+  - title: Bubble sort
+    url: 2019/02/16/bubble
+  - title: Selection sort
+    url: 2019/02/16/select
+  - title: Insertion sort
+    url: 2019/02/16/insert
+  - title: Merge sort
+    url: 2019/02/16/merge
+  - title: Quick sort
+    url: 2019/02/16/quick
+  - title: Heap sort
+    url: 2019/02/16/heap
+- title: Api
+- pages:
+  - title: Get a Post
+    url: 2019/02/16/GET
+  - title: REST
+    url: 2019/02/16/rest
+  - title: Jednoduchá autentizace
+    url: 2019/02/16/login - base
+  - title: OAuth
+    url: 2019/02/16/oauth
+  - title: PHP api
+    url: 2019/02/16/shit
+  - title: Reddit
+    url: 2019/02/16/reddit
+- title: Odkazy
+- pages:
+  - title: Tutoriály
+    url: 2019/02/16/Tutorialy
+  - title: Kompilace
+    url: 2019/02/16/Kompilace
+  - title: OOP
+    url: 2019/02/16/OOP
+  - title: Microsoft
+    url: 2019/02/16/Microsoft
+  - title: Zajímavosti
+    url: 2019/02/16/Zajimavosti
+  - title: Bezpečnost
+    url: 2019/02/16/Security
+...

@@ -70,6 +70,9 @@ collections:
   custom-categories-courses:
     output: true
     permalink: /:name
+  custom-categories-materials:
+    output: true
+    permalink: /:name
 
 defaults:
   - scope:
@@ -110,6 +113,13 @@ defaults:
     values:
       layout: courses-list-posts
       menuHighlight: "Kurzy" # which item should be highlighted in navigation bar
+      excerpt_separator: <!--excerpt-->
+  - scope:
+      path: ""
+      type: "custom-categories-materials"
+    values:
+      layout: materials-list-posts
+      menuHighlight: "Materiály" # which item should be highlighted in navigation bar
       excerpt_separator: <!--excerpt-->
 
 

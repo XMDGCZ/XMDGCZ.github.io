@@ -1,0 +1,71 @@
+version: 1
+categories:
+- title: Úvod do Xamarin
+- pages:
+  - title: Multiplatformní vývoj
+    url: 2019/02/16/multiPlatform
+  - title: Mono
+    url: 2019/02/16/mono
+  - title: Xamarin
+    url: 2019/02/16/xamarin
+- title: Struktura projektu
+- pages:
+  - title: PCL vs Shared
+    url: 2019/02/16/PCLvsShared
+- title: Xamarin Forms
+- pages:
+  - title: Úvod do Forms
+    url: 2019/02/16/intro
+  - title: UI elementy
+    url: 2019/02/16/graphElements
+  - title: Layouty
+    url: 2019/02/16/layout
+  - title: ListView
+    url: 2019/02/16/listView
+  - title: Stránky
+    url: 2019/02/16/pages
+- title: První kroky
+- pages:
+  - title: Založení projektu
+    url: 2019/02/16/newProject
+  - title: Přiadání nové Page
+    url: 2019/02/16/newPage
+  - title: Spuštění aplikace
+    url: 2019/02/16/runApp
+- title: Visual Studio
+- pages:
+  - title: Chyby
+    url: 2019/02/16/errors
+  - title: Založení nového projektu
+    url: 2019/02/16/new
+- title: Ukládání dat
+- pages:
+  - title: Přístup k uložišti
+    url: 2019/02/16/fileAccess
+  - title: SQLite
+    url: 2019/02/16/database
+  - title: Nastavení aplikace
+    url: 2019/02/16/settings
+- title: API
+- pages:
+  - title: Rest
+    url: 2019/02/16/rest
+  - title: Socket IO
+    url: 2019/02/16/SocketIO
+- title: Nativní kód
+- pages:
+  - title: Notifikace
+    url: 2019/02/16/notifications
+  - title: Obrázky z galerie
+    url: 2019/02/16/imagesFromGalery
+  - title: Android zkratky
+    url: 2019/02/16/androidShortcuts
+  - title: Action alert
+    url: 2019/02/16/actionAlert
+- title: Pluginy
+- pages:
+  - title: Čtečka čárových kódů
+    url: 2019/02/16/BarcodeScanner
+  - title: GPS
+    url: 2019/02/16/gps
+...

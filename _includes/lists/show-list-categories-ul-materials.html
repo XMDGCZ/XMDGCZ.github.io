@@ -1,0 +1,64 @@
+{% comment %}
+This file shows all used categories by posts - category without post will not show
+One post could have multiple categories
+
+This file could be called with parameter type. This type determines which category collection will be used for categories.
+{% endcomment %}
+
+// TODO add material category to url
+// TODO fix images
+// TODO fix code highlighting
+// TODO remove work another authors
+// TODO read and fix all posts
+<ul>
+    <li>
+       <a href="/{{ layout.category_type | downcase }}"
+          {% if page.title == layout.category_type  %}
+                class="category-highlighted"
+        {% endif %}
+        > Vše </a>
+    </li>
+
+{% for material-category in site.custom-categories-materials %}
+   <h2>{{material-category.name}}</h2>
+    {% for item in site.data[material-category.data].categories %}
+    <h3>{{ item.title }}</h3>
+        <ul>
+        {% for page in item.pages %}
+            <li><a href="/{{ page.url}}"> {{ page.title }}</a></li>
+        {% endfor %}
+        </ul>
+    {% endfor %}
+{% endfor %}
+
+
+
+
+
+
+{% comment %}
+
+{% assign used-categories = "" | split: ',' %}
+
+{% for category in category_list %}
+    {% for post in site.posts %}
+        {% if post.categories contains category.name %}
+            {% for postCategory in post.categories %}
+                {% unless used-categories contains postCategory %}
+                    <li>
+                        <a href="{{ postCategory}}"
+                           {% if postCategory.name == page.name %}
+                                class="category-highlighted"
+                           {% endif %}
+                        >
+                            {{ postCategory }}
+                        </a>
+                    </li>
+                {% assign used-categories = used-categories | push: postCategory  %}
+                {% endunless %}
+            {% endfor %}
+        {% endif %}
+    {% endfor %}
+{% endfor %}
+{% endcomment %}
+</ul>

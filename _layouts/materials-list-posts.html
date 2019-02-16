@@ -1,0 +1,9 @@
+---
+layout: page
+title: Materiály
+category_type: 'Materialy'
+---
+{% assign category_list = site.custom-categories-materials %}
+
+{% include lists/show-list-categories-ul-materials.html lang=page.lang %}
+{% include lists/show-list-posts.html lang=page.lang sort="sort_index" %}

@@ -31,7 +31,7 @@ This file could be called with parameter type. This type determines which catego
                 </li>
             {% assign used-categories = used-categories | push: category.name  %}
             {% endunless %}
-        {% continue %}
+            {% continue %}
         {% endif %}
     {% endfor %}
 {% endfor %}
