@@ -1,3 +1,4 @@
 ---
-name: Osobní témata
+name: personal
+title: Osobní témata
 ---

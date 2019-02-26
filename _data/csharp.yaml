@@ -1,211 +1,224 @@
 version: 1
 categories:
 - title: Programovací jazyky
-- pages:
+  folder: proglang
+  pages:
   - title: Dělení programovacích jazyků
-    url: 2019/02/16/delba
+    filename: 2019/02/16/delba
   - title: Programovací paradigma
-    url: 2019/02/16/paradigma
+    filename: 2019/02/16/paradigma
   - title: Jazyky C
-    url: 2019/02/16/C
+    filename: 2019/02/16/C
   - title: Kompilace
-    url: 2019/02/16/kompilace
+    filename: 2019/02/16/kompilace
 - title: Úvod do C#
-- pages:
+  folder: intro
+  pages:
   - title: Proměnné
-    url: 2019/02/16/promenne
+    filename: 2019/02/16/promenne
   - title: Datové typy
-    url: 2019/02/16/datoveTypy
+    filename: 2019/02/16/datoveTypy
   - title: Rozhodování
-    url: 2019/02/16/rozhodovani
+    filename: 2019/02/16/rozhodovani
   - title: Cykly
-    url: 2019/02/16/Cykly
+    filename: 2019/02/16/Cykly
   - title: Základní příkazy
-    url: 2019/02/16/ZakladniPrikazy
+    filename: 2019/02/16/ZakladniPrikazy
   - title: Regulární výrazy
-    url: 2019/02/16/regexp
+    filename: 2019/02/16/regexp
   - title: Visual Studio snippety
-    url: 2019/02/16/visualStudioSnippets
+    filename: 2019/02/16/visualStudioSnippets
 - title: .NET
-- pages:
+  folder: dotnet
+  pages:
   - title: Platforma .NET
-    url: 2019/02/16/Platforma dotNET
+    filename: 2019/02/16/Platforma-dotNET
   - title: .NET Core
-    url: 2019/02/16/netCore
+    filename: 2019/02/16/netCore
   - title: UWP
-    url: 2019/02/16/uwp
+    filename: 2019/02/16/uwp
 - title: OOP
-- pages:
+  folder: OOP
+  pages:
   - title: Třídy
-    url: 2019/02/16/Tridy
+    filename: 2019/02/16/Tridy
   - title: Reference objektu
-    url: 2019/02/16/reference
+    filename: 2019/02/16/reference
   - title: Porovnávání objektů
-    url: 2019/02/16/compare
+    filename: 2019/02/16/compare
   - title: Dependency injection obecně
-    url: 2019/02/16/di - base
+    filename: 2019/02/16/di---base
 - title: Programovací modely
-- pages:
+  folder: models
+  pages:
   - title: Úvod do programovacích modelů
-    url: 2019/02/16/intro
+    filename: 2019/02/16/intro
   - title: SOLID
-    url: 2019/02/16/solid
+    filename: 2019/02/16/solid
   - title: MVC
-    url: 2019/02/16/MVC
+    filename: 2019/02/16/MVC
   - title: MVVM
-    url: 2019/02/16/MVVM
+    filename: 2019/02/16/MVVM
   - title: Interface
-    url: 2019/02/16/interface
+    filename: 2019/02/16/interface
   - title: Interface 2
-    url: 2019/02/16/interface_student
+    filename: 2019/02/16/interface_student
   - title: Abstrakce systému
-    url: 2019/02/16/abstraction_student
+    filename: 2019/02/16/abstraction_student
   - title: Abstract class
-    url: 2019/02/16/abstractClass
+    filename: 2019/02/16/abstractClass
 - title: Návrhové vzory
-- pages:
+  folder: modelsSingle
+  pages:
   - title: Adapter
-    url: 2019/02/16/adapter
+    filename: 2019/02/16/adapter
   - title: Adapter 2
-    url: 2019/02/16/adapter2
+    filename: 2019/02/16/adapter2
   - title: Builder
-    url: 2019/02/16/Builder
+    filename: 2019/02/16/Builder
   - title: Bridge
-    url: 2019/02/16/bridge
+    filename: 2019/02/16/bridge
   - title: Command
-    url: 2019/02/16/command
+    filename: 2019/02/16/command
   - title: Decorator
-    url: 2019/02/16/decorator
+    filename: 2019/02/16/decorator
   - title: Facade
-    url: 2019/02/16/facade
+    filename: 2019/02/16/facade
   - title: Factory
-    url: 2019/02/16/factory
+    filename: 2019/02/16/factory
   - title: Flyweight
-    url: 2019/02/16/Flyweight
+    filename: 2019/02/16/Flyweight
   - title: Interpreter
-    url: 2019/02/16/interpreter
+    filename: 2019/02/16/interpreter
   - title: Memento
-    url: 2019/02/16/memento
+    filename: 2019/02/16/memento
   - title: Observer
-    url: 2019/02/16/observer
+    filename: 2019/02/16/observer
   - title: State
-    url: 2019/02/16/state
+    filename: 2019/02/16/state
   - title: Strategy
-    url: 2019/02/16/strategy
+    filename: 2019/02/16/strategy
   - title: Task-based Asynchronous Pattern
-    url: 2019/02/16/tap
+    filename: 2019/02/16/tap
   - title: Visitor
-    url: 2019/02/16/visitor
+    filename: 2019/02/16/visitor
 - title: Pole
-- pages:
+  folder: arrays
+  pages:
   - title: Datové struktury
-    url: 2019/02/16/abstractArr
+    filename: 2019/02/16/abstractArr
   - title: Primitivní pole
-    url: 2019/02/16/primArr
+    filename: 2019/02/16/primArr
   - title: Vícerozměrná pole
-    url: 2019/02/16/multiArr
+    filename: 2019/02/16/multiArr
   - title: Množina
-    url: 2019/02/16/mnozina
+    filename: 2019/02/16/mnozina
   - title: Fronta
-    url: 2019/02/16/fronta
+    filename: 2019/02/16/fronta
   - title: Zásobník
-    url: 2019/02/16/zasobnik
+    filename: 2019/02/16/zasobnik
   - title: Hashovací tabulka
-    url: 2019/02/16/hash
+    filename: 2019/02/16/hash
   - title: Strom
-    url: 2019/02/16/tree
+    filename: 2019/02/16/tree
   - title: Binární strom
-    url: 2019/02/16/binTree
+    filename: 2019/02/16/binTree
   - title: Seznam
-    url: 2019/02/16/list
+    filename: 2019/02/16/list
 - title: Grafika
-- pages:
+  folder: graphics
+  pages:
   - title: WinForms
-    url: 2019/02/16/WinForms
+    filename: 2019/02/16/WinForms
   - title: WPF
-    url: 2019/02/16/WPF
+    filename: 2019/02/16/WPF
   - title: Eventy
-    url: 2019/02/16/Events
+    filename: 2019/02/16/Events
   - title: Životní cyklus událostí
-    url: 2019/02/16/EventsLifeCycle
+    filename: 2019/02/16/EventsLifeCycle
   - title: Více formulářů
-    url: 2019/02/16/MoreForms
+    filename: 2019/02/16/MoreForms
   - title: Styly
-    url: 2019/02/16/Styles
+    filename: 2019/02/16/Styles
   - title: Data binding
-    url: 2019/02/16/DataBinding
+    filename: 2019/02/16/DataBinding
   - title: Data binding - ukázka
-    url: 2019/02/16/DataBindingExample
+    filename: 2019/02/16/DataBindingExample
   - title: GIF
-    url: 2019/02/16/gif
+    filename: 2019/02/16/gif
   - title: 3D grafika
-    url: 2019/02/16/3D
+    filename: 2019/02/16/3D
 - title: Ukládání dat
-- pages:
+  folder: database
+  pages:
   - title: CSV
-    url: 2019/02/16/csv
+    filename: 2019/02/16/csv
   - title: Databáze
-    url: 2019/02/16/db
+    filename: 2019/02/16/db
   - title: SQL
-    url: 2019/02/16/sql
+    filename: 2019/02/16/sql
   - title: Joiny
-    url: 2019/02/16/join
+    filename: 2019/02/16/join
 - title: Vlákna
-- pages:
+  folder: threads
+  pages:
   - title: Vlákna
-    url: 2019/02/16/thread
+    filename: 2019/02/16/thread
   - title: Task C#
-    url: 2019/02/16/task
+    filename: 2019/02/16/task
   - title: Task rozšířeně
-    url: 2019/02/16/taskExtended
+    filename: 2019/02/16/taskExtended
   - title: Synchronizace
-    url: 2019/02/16/sync
+    filename: 2019/02/16/sync
   - title: ThreadPool
-    url: 2019/02/16/threadPool
+    filename: 2019/02/16/threadPool
   - title: Async
-    url: 2019/02/16/threadAsync
+    filename: 2019/02/16/threadAsync
 - title: Řadící algoritmy
-- pages:
+  folder: algs
+  pages:
   - title: Úvod do řadících algoritmů
-    url: 2019/02/16/algs
+    filename: 2019/02/16/algs
   - title: Bubble sort
-    url: 2019/02/16/bubble
+    filename: 2019/02/16/bubble
   - title: Selection sort
-    url: 2019/02/16/select
+    filename: 2019/02/16/select
   - title: Insertion sort
-    url: 2019/02/16/insert
+    filename: 2019/02/16/insert
   - title: Merge sort
-    url: 2019/02/16/merge
+    filename: 2019/02/16/merge
   - title: Quick sort
-    url: 2019/02/16/quick
+    filename: 2019/02/16/quick
   - title: Heap sort
-    url: 2019/02/16/heap
+    filename: 2019/02/16/heap
 - title: Api
-- pages:
+  folder: api
+  pages:
   - title: Get a Post
-    url: 2019/02/16/GET
+    filename: 2019/02/16/GET
   - title: REST
-    url: 2019/02/16/rest
+    filename: 2019/02/16/rest
   - title: Jednoduchá autentizace
-    url: 2019/02/16/login - base
+    filename: 2019/02/16/login---base
   - title: OAuth
-    url: 2019/02/16/oauth
+    filename: 2019/02/16/oauth
   - title: PHP api
-    url: 2019/02/16/shit
+    filename: 2019/02/16/shit
   - title: Reddit
-    url: 2019/02/16/reddit
+    filename: 2019/02/16/reddit
 - title: Odkazy
-- pages:
+  folder: links
+  pages:
   - title: Tutoriály
-    url: 2019/02/16/Tutorialy
+    filename: 2019/02/16/Tutorialy
   - title: Kompilace
-    url: 2019/02/16/Kompilace
+    filename: 2019/02/16/Kompilace
   - title: OOP
-    url: 2019/02/16/OOP
+    filename: 2019/02/16/OOP
   - title: Microsoft
-    url: 2019/02/16/Microsoft
+    filename: 2019/02/16/Microsoft
   - title: Zajímavosti
-    url: 2019/02/16/Zajimavosti
+    filename: 2019/02/16/Zajimavosti
   - title: Bezpečnost
-    url: 2019/02/16/Security
+    filename: 2019/02/16/Security
 ...

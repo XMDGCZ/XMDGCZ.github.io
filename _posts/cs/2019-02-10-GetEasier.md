@@ -2,7 +2,7 @@
 layout: post
 title:  "Jak jsem se rozhodl si zjednodušit život?"
 categories:
-           - "Osobní témata"
+           - "personal"
 author: "Vojtěch Mádr"
 ---
 

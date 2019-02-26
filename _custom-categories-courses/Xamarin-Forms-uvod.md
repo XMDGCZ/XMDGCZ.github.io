@@ -1,5 +1,6 @@
 ---
-name: Xamarin Forms Úvod
+name: xamarin-forms-uvod
+title: Xamarin Forms Úvod
 ---
 Články jsou určeny jako podpora kurzu pro počítačovou školu Gopas, který se zabývá úvodem do Xamarinu, popisu jeho fungování a vytváření aplikací v Xamarin.Forms. 
 <!--excerpt-->

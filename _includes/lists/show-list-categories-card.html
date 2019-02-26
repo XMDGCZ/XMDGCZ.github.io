@@ -26,7 +26,7 @@ This file could be called with parameter type. This type determines which catego
                                 <div class="card-stacked">
                                     <div class="card-content left-align">
                                         <div class="row col s12">
-                                            <h2 class="event-name">{{ category.name }}</h2>
+                                            <h2 class="event-name">{{ category.title }}</h2>
                                             <p class="post-excerpt">{{ category.excerpt | default: post.tagline | markdownify | strip_html | truncatewords: 70 }}</p>
                                         </div>
                                     </div>

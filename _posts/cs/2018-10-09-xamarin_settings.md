@@ -2,7 +2,7 @@
 layout: post
 title: "Nastavení prostředí pro tvorbu Xamarin aplikací" 
 categories:
-            - "Visual Studio 2017"
+            - "visual-studio-2017"
 author: "Vojtěch Mádr"
 ---
 

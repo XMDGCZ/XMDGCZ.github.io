@@ -22,11 +22,11 @@ This file could be called with parameter type. This type determines which catego
             {% unless used-categories contains category.name %}
                 <li>
                     <a href="{{ category.url}}"
-                       {% if category.name == page.name %}
+                       {% if category.title == page.name %}
                             class="category-highlighted"
                        {% endif %}
                     >
-                        {{ category.name }}
+                        {{ category.title }}
                     </a>
                 </li>
             {% assign used-categories = used-categories | push: category.name  %}

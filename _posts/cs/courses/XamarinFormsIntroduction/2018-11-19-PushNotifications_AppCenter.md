@@ -2,8 +2,8 @@
 layout: post
 title: "Push notifikace pomocí AppCenter"
 categories:
-            - "Xamarin Forms Úvod"
-            - "HowTo"
+            - "xamarin-forms-uvod"
+            - "how-to"
 sort_index: 10
 author: "David Malý"
 ---

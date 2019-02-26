@@ -1,11 +1,11 @@
 name: Xamarin Developers Group Czech Blog
 title: XMDGCZ
-url: http:/xmdg.cz
+url: https:/xmdg.cz
 author: David Malý
 email: info@xmdg.cz
 description: >
   Oficiální stránky Xamarin Developers Group Czech komunity
-permalink: /:year/:month/:day/:title/
+permalink: /:categories/:year/:month/:day/:title/
 
 sass:
     style: compressed

@@ -2,7 +2,7 @@
 layout: post
 title: "Úvod do Xamarinu"
 categories:
-            - "Xamarin Forms Úvod"
+            - "xamarin-forms-uvod"
 post_icon: "fas fa-play-circle"
 sort_index: 0
 author: "David Malý"

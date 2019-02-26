@@ -1,3 +1,4 @@
 ---
-name: Komunita
+name: komunita
+title: Komunita
 ---

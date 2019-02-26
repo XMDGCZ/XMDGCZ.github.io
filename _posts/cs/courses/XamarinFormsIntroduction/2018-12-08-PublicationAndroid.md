@@ -2,8 +2,8 @@
 layout: post
 title: "Publikace Xamarin.Android aplikací" 
 categories:
-            - "Xamarin Forms Úvod"
-            - "HowTo"
+             - "xamarin-forms-uvod"
+             - "how-to"
 author: "Vojtěch Mádr"
 ---
 

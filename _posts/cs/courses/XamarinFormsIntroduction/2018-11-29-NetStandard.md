@@ -2,7 +2,7 @@
 layout: post
 title: ".NET Standard"
 categories:
-            - "Xamarin Forms Úvod"
+            - "xamarin-forms-uvod"
             - ".NET"
 post_icon: "fas fa-play-circle"
 sort_index: 1

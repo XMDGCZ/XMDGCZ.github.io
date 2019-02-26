@@ -1,73 +1,80 @@
 version: 1
 categories:
 - title: Programování 3.R
-- pages:
+  folder: prog3r
+  pages:
   - title: Dlouhodobé projekty
-    url: 2019/02/16/longTherm
+    filename: 2019/02/16/longTherm
   - title: Úvod do C#
-    url: 2019/02/16/Cintro
+    filename: 2019/02/16/Cintro
   - title: OOP
-    url: 2019/02/16/OOP
+    filename: 2019/02/16/OOP
   - title: Nástroje abstrakce
-    url: 2019/02/16/abstraction
+    filename: 2019/02/16/abstraction
   - title: WPF
-    url: 2019/02/16/WPF
+    filename: 2019/02/16/WPF
   - title: Práce se soubory
-    url: 2019/02/16/files
+    filename: 2019/02/16/files
   - title: Ukládání dat
-    url: 2019/02/16/database
+    filename: 2019/02/16/database
   - title: Knihovny
-    url: 2019/02/16/libs
+    filename: 2019/02/16/libs
   - title: Ze cvičení
-    url: 2019/02/16/extend
+    filename: 2019/02/16/extend
   - title: Instalace VS17
-    url: 2019/02/16/install
+    filename: 2019/02/16/install
   - title: Příprava na maturitu
-    url: 2019/02/16/okr
+    filename: 2019/02/16/okr
 - title: PCV 3.R
-- pages:
+  folder: Xamarin
+  pages:
   - title: Úvod do Xamarin
-    url: 2019/02/16/XamarinIntro
+    filename: 2019/02/16/XamarinIntro
   - title: Dlouhodobé projekty - Xamarin
-    url: 2019/02/16/longTherm
+    filename: 2019/02/16/longTherm
   - title: UML
-    url: 2019/02/16/uml
+    filename: 2019/02/16/uml
 - title: Programování 4.R
-- pages:
+  folder: prog4r
+  pages:
   - title: Grafické aplikace
-    url: 2019/02/16/graphApp
+    filename: 2019/02/16/graphApp
 - title: Práce pro zájemce
-- pages:
+  folder: praceProZajemce
+  pages:
   - title: Pythagorova věta
-    url: 2019/02/16/Pythagor
+    filename: 2019/02/16/Pythagor
   - title: FindX and FindMe
-    url: 2019/02/16/FindxFindMe
+    filename: 2019/02/16/FindxFindMe
   - title: Fallout
-    url: 2019/02/16/Fallout
+    filename: 2019/02/16/Fallout
   - title: Úkázky dokumentace
-    url: 2019/02/16/UkazkyDokumentace
+    filename: 2019/02/16/UkazkyDokumentace
 - title: Opakování
-- pages:
+  folder: backsteps
+  pages:
   - title: Základy
-    url: 2019/02/16/arrays-practise
+    filename: 2019/02/16/arrays-practise
   - title: Pole
-    url: 2019/02/16/arrays
+    filename: 2019/02/16/arrays
   - title: OOP cvičení
-    url: 2019/02/16/oop2
+    filename: 2019/02/16/oop2
   - title: Práce s databází
-    url: 2019/02/16/db
+    filename: 2019/02/16/db
   - title: Class diagramy
-    url: 2019/02/16/classDiagram
+    filename: 2019/02/16/classDiagram
 - title: Přednášky
-- pages:
+  folder: prednasky
+  pages:
   - title: Známé osobnosti
-    url: 2019/02/16/osobnosti
+    filename: 2019/02/16/osobnosti
   - title: Osobní rozvoj
-    url: 2019/02/16/osobni
+    filename: 2019/02/16/osobni
   - title: Technické
-    url: 2019/02/16/technicke
+    filename: 2019/02/16/technicke
 - title: Odkazy
-- pages:
+  folder: odkazy
+  pages:
   - title: Version Control System
-    url: 2019/02/16/vcs
+    filename: 2019/02/16/vcs
 ...

@@ -1,3 +1,4 @@
 ---
-name: HowTo
+name: how-to
+title: HowTo
 ---

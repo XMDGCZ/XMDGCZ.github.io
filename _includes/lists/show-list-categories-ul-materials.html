@@ -4,12 +4,14 @@ One post could have multiple categories
 
 This file could be called with parameter type. This type determines which category collection will be used for categories.
 {% endcomment %}
-
-// TODO add material category to url
-// TODO fix images
-// TODO fix code highlighting
-// TODO remove work another authors
-// TODO read and fix all posts
+{% comment %}
+    // TODO add material category to url
+    - navigation now respect cateories, but lists filepath
+    // TODO fix images
+    // TODO fix code highlighting
+    // TODO remove work another authors
+    // TODO read and fix all posts
+{% endcomment %}
 <ul>
     <li>
        <a href="/{{ layout.category_type | downcase }}"
@@ -25,7 +27,9 @@ This file could be called with parameter type. This type determines which catego
     <h3>{{ item.title }}</h3>
         <ul>
         {% for page in item.pages %}
-            <li><a href="/{{ page.url}}"> {{ page.title }}</a></li>
+            <li><a href="/{{ material-category.name }}/{{ item.folder }}/{{ page.filename }}"> {{ page.title }}</a>
+
+            </li>
         {% endfor %}
         </ul>
     {% endfor %}
@@ -46,7 +50,7 @@ This file could be called with parameter type. This type determines which catego
             {% for postCategory in post.categories %}
                 {% unless used-categories contains postCategory %}
                     <li>
-                        <a href="{{ postCategory}}"
+                        <a href="{{postCategory}}"
                            {% if postCategory.name == page.name %}
                                 class="category-highlighted"
                            {% endif %}

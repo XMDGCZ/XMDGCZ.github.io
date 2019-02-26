@@ -1,71 +1,80 @@
 version: 1
 categories:
 - title: Úvod do Xamarin
-- pages:
+  folder: intro
+  pages:
   - title: Multiplatformní vývoj
-    url: 2019/02/16/multiPlatform
+    filename: 2019/02/16/multiPlatform
   - title: Mono
-    url: 2019/02/16/mono
+    filename: 2019/02/16/mono
   - title: Xamarin
-    url: 2019/02/16/xamarin
+    filename: 2019/02/16/xamarin
 - title: Struktura projektu
-- pages:
+  folder: structure
+  pages:
   - title: PCL vs Shared
-    url: 2019/02/16/PCLvsShared
+    filename: 2019/02/16/PCLvsShared
 - title: Xamarin Forms
-- pages:
+  folder: forms
+  pages:
   - title: Úvod do Forms
-    url: 2019/02/16/intro
+    filename: 2019/02/16/intro
   - title: UI elementy
-    url: 2019/02/16/graphElements
+    filename: 2019/02/16/graphElements
   - title: Layouty
-    url: 2019/02/16/layout
+    filename: 2019/02/16/layout
   - title: ListView
-    url: 2019/02/16/listView
+    filename: 2019/02/16/listView
   - title: Stránky
-    url: 2019/02/16/pages
+    filename: 2019/02/16/pages
 - title: První kroky
-- pages:
+  folder: firststeps
+  pages:
   - title: Založení projektu
-    url: 2019/02/16/newProject
+    filename: 2019/02/16/newProject
   - title: Přiadání nové Page
-    url: 2019/02/16/newPage
+    filename: 2019/02/16/newPage
   - title: Spuštění aplikace
-    url: 2019/02/16/runApp
+    filename: 2019/02/16/runApp
 - title: Visual Studio
-- pages:
+  folder: visualStudio
+  pages:
   - title: Chyby
-    url: 2019/02/16/errors
+    filename: 2019/02/16/errors
   - title: Založení nového projektu
-    url: 2019/02/16/new
+    filename: 2019/02/16/new
 - title: Ukládání dat
-- pages:
+  folder: dataAccess
+  pages:
   - title: Přístup k uložišti
-    url: 2019/02/16/fileAccess
+    filename: 2019/02/16/fileAccess
   - title: SQLite
-    url: 2019/02/16/database
+    filename: 2019/02/16/database
   - title: Nastavení aplikace
-    url: 2019/02/16/settings
+    filename: 2019/02/16/settings
 - title: API
-- pages:
+  folder: API
+  pages:
   - title: Rest
-    url: 2019/02/16/rest
+    filename: 2019/02/16/rest
   - title: Socket IO
-    url: 2019/02/16/SocketIO
+    filename: 2019/02/16/SocketIO
 - title: Nativní kód
-- pages:
+  folder: native
+  pages:
   - title: Notifikace
-    url: 2019/02/16/notifications
+    filename: 2019/02/16/notifications
   - title: Obrázky z galerie
-    url: 2019/02/16/imagesFromGalery
+    filename: 2019/02/16/imagesFromGalery
   - title: Android zkratky
-    url: 2019/02/16/androidShortcuts
+    filename: 2019/02/16/androidShortcuts
   - title: Action alert
-    url: 2019/02/16/actionAlert
+    filename: 2019/02/16/actionAlert
 - title: Pluginy
-- pages:
+  folder: tools
+  pages:
   - title: Čtečka čárových kódů
-    url: 2019/02/16/BarcodeScanner
+    filename: 2019/02/16/BarcodeScanner
   - title: GPS
-    url: 2019/02/16/gps
+    filename: 2019/02/16/gps
 ...
