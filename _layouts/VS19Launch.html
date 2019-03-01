@@ -1,0 +1,125 @@
+---
+layout: default
+---
+
+<div class="section first-section bg-img-VS19Launch">
+  <div class="home-header container">
+    <h1 class="page-header-text">Visual Studio 19 Launch</h1>
+    <p class="page-header-text">Stream akce uspořádané ke spuštění Visual Studio 19</p>
+  </div>
+</div>
+
+<div class="container section">
+  <div class="row">
+    <div class="col s12">
+      <h2>O akci</h2>
+    </div>
+
+    <div class="u-flex">
+      <div class="col s12 l3 push-l9 hidden-xs img-container">
+        <a href="https://www.xamarin.com" class="highlight-image">
+          <img src="/assets/images/logos/Visual+Studio+Launch+facebook.png" alt="VS19LaunchLogo">
+        </a>
+      </div>
+      <div class="col s12 l9 pull-l3">
+        <p>
+          <strong>Visual Studio 19 Launch</strong>, je globální konfrence pořádaná k oficiálnímu spuštění  Visual Studio 19! Náše místní akce zajišťuje přenos videa přímo z konference, který Vám poskytne nejrychlejší přístup k novinkám a informacím o VS 19.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="highlights-list col s12 left-align">
+      <div>
+        <p>
+          <span class="img-wrapper">
+              <img src="/assets/images/icons/map.svg" alt="map ico"/>
+          </span>
+          <strong>Praha</strong> <span>Microsoft CZ, Vyskočilova 1561/4a</span>
+        </p>
+      </div>
+      <div>
+        <p>
+          <span class="img-wrapper">
+              <img src="/assets/images/icons/calendar.svg" alt="calendar ico"/>
+          </span>
+          <strong>2. 4. 2019</strong>
+        </p>
+      </div>
+      <div>
+        <p>
+          <span class="img-wrapper">
+            <img src="/assets/images/icons/clock.svg" alt="clock ico"/>
+          </span>
+          <strong>18:00</strong>
+        </p>
+      </div>
+      <div class="registration-container">
+          <a href="https://www.meetup.com/xmdg-cz/events/259385933/">
+              <div class="card-image hide-on-small-and-down color-secondary">
+                  <i class="fab fa-meetup fa-10x" ></i>
+              </div>
+              <p>
+                  Registrace na meetup.com
+              </p>
+          </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container section">
+  <div class="row">
+    <div class="col s12">
+      <iframe src='https://mediastream.microsoft.com/events/2019/1904/VirtualLaunchEvent/player/VirtualLaunchEvent.html?cid=synd-[Prague]' border='0' frameborder='0' scrolling='no' width='640' height='360' allowfullscreen='true' style='overflow:hidden;'> </iframe>
+    </div>
+  </div>
+</div>
+
+
+<div class="container section m-map">
+    <div class="row">
+        <div class="col s12">
+            <h2>Jak se k nám dostanete</h2>
+        </div>
+        <div class="col s12 l5 push-l7">
+            <p>
+                <strong>Microsoft CZ</strong><br>
+                Vyskočilova 1561/4a, budova Delta<br>
+                140 00 Praha
+            </p>
+            <p>
+                Nejrychleji z centra Prahy Metrem do stanice <strong>Budějovická</strong> (trasa C). Autobusová zastávka <strong>Vyskočilova</strong>.
+                <br>
+                Parkování je možné na placeném parkovišti v blízkosti areálu.
+            </p>
+
+        </div>
+        <div class="col s12 l7 pull-l5 hidden-xs">
+            <a href="https://www.google.com/maps/place/Microsoft/@50.0480962,14.4552415,17z/data=!4m8!1m2!3m1!2sMicrosoft!3m4!1s0x470b939252ca9603:0x635024d5e443113b!8m2!3d50.0480929!4d14.4574358" target="_blank" class="highlight-image">
+                <div id="map" style="height: 400px;width: 100%;"></div>
+            </a>
+
+        </div>
+    </div>
+</div>
+
+<div class="container section">
+    <div class="row">
+        <div class="col s12">
+            <p>
+                <strong>Poznámka pro návštevníky:</strong> Informace budou aktualizovány po oficiálním potvrzení akced.
+            </p>
+        </div>
+    </div>
+</div>
+
+<script>
+  function initMap() {
+    var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 17, center: {lat: 50.0481404, lng: 14.4563637}, disableDefaultUI: true});
+    var marker = new google.maps.Marker({position: {lat: 50.0481404, lng: 14.4563637}, map: map});
+  }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQBTS1etifDzwYmPYuXEJUWDuqraRhJZ4&callback=initMap">
+</script>
